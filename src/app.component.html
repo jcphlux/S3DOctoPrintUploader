@@ -1,0 +1,26 @@
+<div class="container-fluid" *ngIf="parmsValid">
+    <h3>Status:</h3>
+    <h6>{{status}}</h6>
+
+    <div class="form-inline float-right">
+        <button (click)="remove()" [ngClass]="{'disabled': !uploadIsEnabled }" type="button" class="btn btn-info mb-2 mr-2"
+            data-toggle="tooltip" data-placement="top" title="Remove the file after uploading.">Remove
+            Source - <i *ngIf="removeSource">Yes</i><i *ngIf="!removeSource"> No</i>
+        </button>
+        <button (click)="upload()" [ngClass]="{'disabled': !uploadIsEnabled }" type="button" class="btn btn-primary mb-2 mr-2"
+            data-toggle="tooltip" data-placement="top" title="Only upload the file.">Upload
+            Only</button>
+        <button (click)="print()" [ngClass]="{'disabled': !printIsEnabled }" type="button" class="btn btn-success mb-2 mr-2"
+            data-toggle="tooltip" data-placement="top" title="Upload and start the print on the file.">Upload/Print</button>
+        <button (click)="close()" type="button" class="btn btn-secondary mb-2" data-toggle="tooltip" data-placement="top"
+            title="Cancel the upload.">Cancel</button>
+    </div>
+</div>
+<div class="container-fluid" *ngIf="!parmsValid">
+    <h4>Invalid Arguments</h4>
+    <h6>Please pass in valid Arguments. <br /> -p=[path] -f=[filename] -s=[OctoPrintServer] -a=[APIKey]</h6>
+
+    <div class="form-inline float-right">
+        <button (click)="close()" type="button" class="btn btn-secondary mb-2">Ok</button>
+    </div>
+</div>
