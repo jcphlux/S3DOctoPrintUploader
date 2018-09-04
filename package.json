@@ -47,12 +47,17 @@
     }
   },
   "dependencies": {
-    "@angular/common": "^2.4.10",
-    "@angular/compiler": "^2.4.10",
-    "@angular/core": "^2.4.10",
-    "@angular/platform-browser": "^2.4.10",
-    "@angular/platform-browser-dynamic": "^2.4.10",
-    "@angular/http": "^2.4.10",
+    "@angular/animations": "^5.0.0",
+    "@angular/common": "^5.0.0",
+    "@angular/compiler": "^5.0.0",
+    "@angular/compiler-cli": "^5.0.0",
+    "@angular/core": "^5.0.0",
+    "@angular/forms": "^5.0.0",
+    "@angular/http": "^5.0.0",
+    "@angular/platform-browser": "^5.0.0",
+    "@angular/platform-browser-dynamic": "^5.0.0",
+    "@angular/platform-server": "^5.0.0",
+    "@angular/router": "^5.0.0",
     "bootstrap": "^4.1.3",
     "electron-compile": "^6.4.3",
     "electron-devtools-installer": "^2.2.4",
@@ -61,6 +66,7 @@
     "ngx-electron": "^1.0.4",
     "popper.js": "^1.14.4",
     "reflect-metadata": "^0.1.12",
+    "rxjs": "^5.5.2",
     "tslib": "^1.9.3",
     "zone.js": "^0.7.8"
   },
@@ -71,6 +77,6 @@
     "electron-forge": "^5.2.2",
     "electron-prebuilt-compile": "2.0.7",
     "tslint": "^4.5.1",
-    "typescript": "^2.9.2"
+    "typescript": "2.4.2"
   }
 }
